@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>Book Store</title>
+	<style>
+		body {
+			background-color: #f8f9fa;
+			color: #333;
+			font-family: Arial, sans-serif;
+		}
+
+		.navbar {
+			background-color: #4A4A4A;
+		}
+
+		.navbar-brand,
+		.nav-link {
+			color: #ffffff !important;
+		}
+
+		.navbar-brand:hover,
+		.nav-link:hover {
+			color: #FFD700 !important;
+		}
+
+		.container h1 {
+			color: #333;
+			font-size: 2.5rem;
+			font-weight: bold;
+			text-shadow: 1px 1px 2px #666;
+		}
+
+		.container h6 {
+			color: #666;
+			margin-bottom: 20px;
+			line-height: 1.6;
+		}
+
+		.hover-image {
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			border: 2px solid #ddd;
+			border-radius: 10px;
+		}
+
+		.hover-image:hover {
+			transform: scale(1.1);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			border-color: #FFD700;
+		}
+
+		.image-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+			margin-top: 40px;
+		}
+
+		.image-container img {
+			width: 28%;
+			max-width: 220px;
+			height: auto;
+		}
+
+		.content {
+			max-width: 80%;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #ffffff;
+			border: 1px solid #ddd;
+			border-radius: 15px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		footer {
+			margin-top: 50px;
+			padding: 20px;
+			text-align: center;
+			background-color: #4A4A4A;
+			color: #ffffff;
+			border-top: 3px solid #FFD700;
+		}
+
+		footer a {
+			color: #FFD700;
+			text-decoration: none;
+		}
+
+		footer a:hover {
+			color: #ffffff;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Book Store</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="available_books">Available Books</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="my_books">My Books</a>
+					</li>
+				</ul>
+				<div>
+					<a class="nav-link" href="book_register">New Book Register</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container text-center my-5 content">
+		<h1>WELCOME TO BOOK STORE</h1>
+		<h6>Discover the magic of words and stories! Explore our collection of books and immerse yourself in a world of
+			knowledge and adventure. Whether you're looking for fiction, non-fiction, or something in between, we have
+			something for every reader. Our curated selection of books will inspire and captivate you. Come and find
+			your
+			next great read!</h6>
+
+		<div class="image-container">
+			<img class="hover-image" alt="Left Image" src="/images/leftbook.png">
+			<img class="hover-image" alt="Main Image" src="/images/book.png">
+			<img class="hover-image" alt="Right Image" src="/images/rightbook.png">
+		</div>
+	</div>
+
+	<footer>
+		<p>© 2024 Book Store. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+		</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
